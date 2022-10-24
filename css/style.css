@@ -1,0 +1,135 @@
+
+.custom-title{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.custom-title span {
+    font-size: 16px;
+    display: block;
+}
+
+/* cabecera */
+
+.navbar {
+   background-color: #363b41;
+}
+
+.navbar-img {
+    max-width: 140px;
+}
+
+/* Imagen portada */
+#banner {
+    position: relative;
+    height: 600px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 120px;
+}
+
+#banner:before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 600px;
+    background-image: url('../img/ba1.jpg');
+    background-size: cover;
+    background-position: bottom;
+    filter: brightness(.5);
+}
+
+#banner article{
+    color: white;
+    text-align: right;
+    position: relative;
+    width: 50%;
+}
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.titulo_card{
+    text-align: center;
+    font-weight: bold;
+}
+
+.card_text_center{
+    text-align: center;
+   
+}
+.sinborde {
+    
+    border: 0;
+  }
+
+  .confondo {
+    background-color: #def;
+  }
+
+  .redondeadonorelieve {
+    border-radius: 5px;
+
+    border: 2.5px solid #39c;
+  }
+  .redondeadonorelieve_jun {
+    border-radius: 5px;
+    border: 2.5px solid rgb(175, 12, 12);
+  }
+
+
+#turism {
+    display: flex;
+}
+
+#turism .turism-article {
+    flex: 1 1 50%;
+}
+
+#turism .turism-article:last-of-type {
+    background-color: #363b41;
+    color: white;
+}
+
+/* pie */
+
+footer {
+    padding: 50px;
+    background-color: #1c3946;
+} 
+
+footer nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+footer nav ul li a {
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+}
+
+
+@media (max-width: 768px) {
+    #banner article{
+        margin: 0 auto;
+        width: 80%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 	576px) {
+    #banner article{
+        width: 100%;
+    }
+}
